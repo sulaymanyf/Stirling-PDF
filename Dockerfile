@@ -63,7 +63,7 @@ RUN echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/main" | tee -a /et
 # uno unoconv and HTML
     pip install --break-system-packages --no-cache-dir --upgrade unoconv WeasyPrint pdf2image pillow && \
     mv /usr/share/tessdata /usr/share/tessdata-original && \
-    mkdir -p $HOME /configs /logs /customFiles /pipeline/watchedFolders /pipeline/finishedFolders /pipeline/watchedFolders  && \
+    mkdir -p $HOME /configs /logs /customFiles /pipeline/watchedFolders /pipeline/finishedFolders /pipeline/watchedFolders && \
     fc-cache -f -v && \
     chmod +x /scripts/* && \
     chmod +x /scripts/init.sh && \
